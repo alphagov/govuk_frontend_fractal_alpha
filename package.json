@@ -1,0 +1,8 @@
+{
+  "name": "gov.uk-frontend",
+  "version": "0.1.0",
+  "dependencies": {
+    "@frctl/fractal": "^1.0.8",
+    "@frctl/nunjucks": "^1.0.1"
+  }
+}
