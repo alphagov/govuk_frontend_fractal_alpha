@@ -31,6 +31,11 @@ fractal.components.engine('@frctl/nunjucks');
 fractal.components.set('ext', '.nunj'); 
 
 /*
+ * Set the default preview layout
+ */
+fractal.components.set('default.preview', '@preview');
+
+/*
  * Tell Fractal where to look for documentation pages.
  */
 fractal.docs.set('path', path.join(__dirname, 'docs'));
@@ -39,3 +44,5 @@ fractal.docs.set('path', path.join(__dirname, 'docs'));
  * Tell the Fractal web preview plugin where to look for static assets.
  */
 fractal.web.set('static.path', path.join(__dirname, 'public'));
+
+

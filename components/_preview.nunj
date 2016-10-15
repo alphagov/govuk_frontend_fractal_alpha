@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{{ path '/assets/main.css' }}">
+    <title>Preview</title>
+</head>
+<body>
+
+{{ yield|safe }}
+
+<script src="{{ path '/assets/main.js' }}"></script>
+</body>
+</html>
