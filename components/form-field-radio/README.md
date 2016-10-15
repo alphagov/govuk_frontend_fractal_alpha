@@ -1,7 +1,7 @@
-# Usability
+# Notes
 
-Make field widths proportional to the input they take.
+Use these to let users choose a single option from a list.
 
-Ensure that users can enter the information they need at smaller screen sizes.
+For more than two options, radio buttons should be stacked.
 
-Snap form fields to 100% width at smaller screen sizes.
+Radio buttons with large hit areas are easier to select with a mouse or touch devices.

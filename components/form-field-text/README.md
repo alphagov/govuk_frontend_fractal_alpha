@@ -1,4 +1,4 @@
-# Usability
+# Notes
 
 Make field widths proportional to the input they take.
 

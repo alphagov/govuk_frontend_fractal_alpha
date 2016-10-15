@@ -3,7 +3,7 @@
     <legend class="heading-medium">{{ questionText }}</legend>
     {% for option in options %}
     <label class="block-label" for="{{ id }}-{{ option.value }}">
-      <input id="{{ id }}-{{ option.value }}" type="radio" name="{{ id }}" value="{{ option.value }}">
+      <input id="{{ id }}-{{ option.value }}" type="checkbox" value="{{ option.value }}">
       {{ option.label }}
     </label>
     {% endfor %}

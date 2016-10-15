@@ -1,4 +1,4 @@
-# Usability
+# Notes
 
 Use buttons to move though a transaction.
 

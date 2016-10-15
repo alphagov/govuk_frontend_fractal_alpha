@@ -61,7 +61,8 @@ const mandelbrot = require('@frctl/mandelbrot');
 const myCustomisedTheme = mandelbrot({
     "skin": "black",
     "format": "yaml",
-    "nav": ["docs", "components"]
+    "nav": ["docs", "components"],
+    "panels": ["notes", "html", "view", "context", "resources", "info"]
     // any other theme configuration values here
 });
 

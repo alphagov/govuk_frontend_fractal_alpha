@@ -1,4 +1,5 @@
-title: Button
+title: Buttons
+label: Buttons
 status: ready
 context:
   text: This is a default button

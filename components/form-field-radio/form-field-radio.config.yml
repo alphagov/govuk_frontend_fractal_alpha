@@ -4,9 +4,9 @@ context:
   id: question
   questionText: Where do you live?
   options:
-  -	radioText: Northern Ireland
+  -	label: Northern Ireland
     value: 1
-  -	radioText: Isle of Man or the Channel Islands
+  -	label: Isle of Man or the Channel Islands
     value: 2
-  -	radioText: I am a British citizen living abroad
+  -	label: I am a British citizen living abroad
     value: 3
