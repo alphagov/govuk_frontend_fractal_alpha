@@ -1,5 +1,5 @@
-title: Radio button
-label: Radio button
+title: Radio buttons
+label: Radio buttons
 context:
   id: question
   questionText: Where do you live?

@@ -50,4 +50,24 @@ fractal.docs.set('path', path.join(__dirname, 'docs'));
  */
 fractal.web.set('static.path', path.join(__dirname, 'public'));
 
+/*
+ * Require the Mandelbrot theme module
+ */
+const mandelbrot = require('@frctl/mandelbrot');
+
+/*
+ * Create a new instance with custom config options
+ */
+const myCustomisedTheme = mandelbrot({
+    "skin": "black",
+    "format": "yaml",
+    "nav": ["docs", "components"]
+    // any other theme configuration values here
+});
+
+/*
+ * Tell Fractal to use the configured theme by default
+ */
+fractal.web.theme(myCustomisedTheme);
+
 
