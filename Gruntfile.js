@@ -60,6 +60,11 @@ module.exports = function(grunt){
           cwd: 'node_modules/govuk_template_jinja/assets/',
           src: '**',
           dest: 'public/'
+        },
+        {
+          cwd: 'govuk_modules/govuk_frontend_toolkit/images/',
+          src: '**',
+          dest: 'public/images'
         }]
       },
       govuk_template_jinja: {

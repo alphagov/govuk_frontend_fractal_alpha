@@ -1,0 +1,1 @@
+<label class="form-label" for="{{ id }}">{{ labelText }}{% if hintText %} <span class="form-hint">{{ hintText }}</span>{% endif %}</label>

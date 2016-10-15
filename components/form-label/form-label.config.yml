@@ -1,0 +1,4 @@
+title: Form label
+context:
+    labelText: This is a form label
+    hintText: This is hint text

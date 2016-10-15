@@ -36,6 +36,11 @@ fractal.components.set('ext', '.nunj');
 fractal.components.set('default.preview', '@preview');
 
 /*
+ * Variants are collated on the same page
+ */
+fractal.components.set('default.collated', true);
+
+/*
  * Tell Fractal where to look for documentation pages.
  */
 fractal.docs.set('path', path.join(__dirname, 'docs'));
