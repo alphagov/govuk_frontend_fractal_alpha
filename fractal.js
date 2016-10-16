@@ -63,8 +63,12 @@ const myCustomisedTheme = mandelbrot({
     "format": "yaml",
     "nav": ["docs", "components"],
     "panels": ["notes", "html", "view", "context", "resources", "info"]
-    // any other theme configuration values here
 });
+
+/*
+ * Specify a directory to hold the theme override templates
+ */
+myCustomisedTheme.addLoadPath(__dirname + '/govuk_theme'); 
 
 /*
  * Tell Fractal to use the configured theme by default

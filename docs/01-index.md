@@ -1,5 +1,8 @@
 ---
-title: GOV.UK Frontend
+title: The web framework for UK government services
 ---
 
-This is your index page. You can edit its contents at `docs/01-index.hbs`
+GOV.UK Frontend from GDS is the fastest way to build accessible, responsive web interfaces for government.
+
+**[Download v1.0 now](02-download.md)**
+
