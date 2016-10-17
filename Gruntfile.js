@@ -9,13 +9,14 @@ module.exports = function(grunt){
           sourcemap: true,
           includePaths: [
             'govuk_modules/govuk_template/assets/stylesheets',
-            'govuk_modules/govuk_frontend_toolkit/stylesheets'
+            'govuk_modules/govuk_frontend_toolkit/stylesheets',
+            'govuk_modules/govuk-elements-sass'
           ],
           outputStyle: 'expanded'
         },
         files: [{
           expand: true,
-          cwd: "app/assets/sass",
+          cwd: "govuk_modules/sass",
           src: ["*.scss"],
           dest: "public/stylesheets/",
           ext: ".css"
@@ -28,7 +29,7 @@ module.exports = function(grunt){
       assets: {
         files: [{
           expand: true,
-          cwd: 'app/assets/',
+          cwd: 'govuk_modules/assets/',
           src: ['**/*', '!sass/**'],
           dest: 'public/'
         }],
@@ -73,27 +74,20 @@ module.exports = function(grunt){
           src: '**',
           dest: 'lib/'
         }]
-      },
-      govuk_elements: {
-        files: [{
-          cwd: 'govuk_modules/govuk-elements-sass',
-          src: ['**'],
-          dest: 'app/assets/sass/'
-        }]
-      },
+      }
     },
 
     // Watches assets and sass for changes
     watch: {
       css: {
-        files: ['app/assets/sass/**/*.scss'],
+        files: ['govuk_modules/sass/**/*.scss'],
         tasks: ['sass'],
         options: {
           spawn: false,
         }
       },
       assets:{
-        files: ['app/assets/**/*', '!app/assets/sass/**'],
+        files: ['govuk_modules/assets/**/*', '!govuk_modules/assets/sass/**'],
         tasks: ['sync:assets'],
         options: {
           spawn: false,
