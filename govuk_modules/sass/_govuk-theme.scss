@@ -4,6 +4,10 @@ a{
 	transition: none;
 }
 
+.Tree-items{
+	margin-bottom: 10px;
+}
+
 .Tree-item{
 	@include core-16;
     height: 40px;
@@ -21,8 +25,16 @@ a{
 	}
 }
 
-.Tree-entityLink:focus{
+.Tree-entityLink:focus,
+.Tree-entityLink:active{
 	background-color: #005ea5;
+	span{
+		color: white;
+	}
+}
+
+.Tree-entityLink::after {
+
 }
 
 .is-current .Tree-entityLink::after {
@@ -41,7 +53,7 @@ a{
 
 .Tree-title{
 	margin-bottom: 0;
-	color: $text-colour;
+	color: $secondary-text-colour;
 	text-transform: none;
 	@include core-19;
     letter-spacing: normal;
@@ -52,7 +64,7 @@ a{
 }
 
 .Preview-handle{
-    right: 5px;
+    right: 0px;
 }
 
 .Preview-resizer {
@@ -64,6 +76,14 @@ a{
     outline: none;
 }
 
+.Browser{
+    margin-bottom: 500px;
+}
+
+.Browser-tab a:focus{
+    background-color: rgba(83, 83, 99, 0.05);
+}
+
 .Browser-tab a{
     @include core-16();
     color: $text-colour;
@@ -73,6 +93,7 @@ a{
 }
 .Browser-tab.is-active a{
     color: $text-colour;
+    background-color: rgba(83, 83, 99, 0.05);
     border-bottom: 3px solid #005ea5;
 }
 
@@ -106,16 +127,20 @@ a{
 }
 
 .Preview{
-	border: 2px solid $border-colour;
+	border: 1px solid $border-colour;
 }
 
+
 .Pen-title{
-    @include core-19();
+  	@include bold-36();
 	color: $text-colour;
 	margin-top: 20px;
 }
 
-.Pen-previewLink:link {
+.Pen-previewLink:link,
+.Pen-previewLink:visited,
+.Pen-previewLink:hover,
+.Pen-previewLink:active {
 	color: $text-colour;
 }
 
@@ -123,6 +148,11 @@ a{
 .Pen{
 	height: auto;
 }
+
+.Pen-panel{
+    margin-right: 20px;
+}
+
 .Browser{	
     position: initial;
 }
@@ -140,7 +170,7 @@ a{
 		color: $text-colour;
 	}
 	h2{
-    	@include bold-24();
+    	@include bold-23();
 		color: $text-colour;
 	}
 }
@@ -158,7 +188,13 @@ a{
 }
 
 
-
+.Status-label {
+	@include core-16;
+    letter-spacing: normal;
+    border-radius: 0;
+    padding: 0.125rem 0.75rem;
+    color: white;
+}
 
 
 

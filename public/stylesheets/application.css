@@ -2094,6 +2094,10 @@ a {
   transition: none;
 }
 
+.Tree-items {
+  margin-bottom: 10px;
+}
+
 .Tree-item {
   font-family: "nta", Arial, sans-serif;
   font-weight: 400;
@@ -2124,8 +2128,14 @@ a {
   display: none;
 }
 
-.Tree-entityLink:focus {
+.Tree-entityLink:focus,
+.Tree-entityLink:active {
   background-color: #005ea5;
+}
+
+.Tree-entityLink:focus span,
+.Tree-entityLink:active span {
+  color: white;
 }
 
 .is-current .Tree-entityLink::after {
@@ -2145,7 +2155,7 @@ a {
 
 .Tree-title {
   margin-bottom: 0;
-  color: #0b0c0c;
+  color: #6f777b;
   text-transform: none;
   font-family: "nta", Arial, sans-serif;
   font-weight: 400;
@@ -2167,7 +2177,7 @@ a {
 }
 
 .Preview-handle {
-  right: 5px;
+  right: 0px;
 }
 
 .Preview-resizer {
@@ -2177,6 +2187,14 @@ a {
 .Browser-tab a:focus,
 .Tree-entityLink:focus {
   outline: none;
+}
+
+.Browser {
+  margin-bottom: 500px;
+}
+
+.Browser-tab a:focus {
+  background-color: rgba(83, 83, 99, 0.05);
 }
 
 .Browser-tab a {
@@ -2201,6 +2219,7 @@ a {
 
 .Browser-tab.is-active a {
   color: #0b0c0c;
+  background-color: rgba(83, 83, 99, 0.05);
   border-bottom: 3px solid #005ea5;
 }
 
@@ -2234,32 +2253,39 @@ a {
 }
 
 .Preview {
-  border: 2px solid #bfc1c3;
+  border: 1px solid #bfc1c3;
 }
 
 .Pen-title {
   font-family: "nta", Arial, sans-serif;
-  font-weight: 400;
+  font-weight: 700;
   text-transform: none;
-  font-size: 16px;
-  line-height: 1.25;
+  font-size: 24px;
+  line-height: 1.0416666667;
   color: #0b0c0c;
   margin-top: 20px;
 }
 
 @media (min-width: 641px) {
   .Pen-title {
-    font-size: 19px;
-    line-height: 1.3157894737;
+    font-size: 36px;
+    line-height: 1.1111111111;
   }
 }
 
-.Pen-previewLink:link {
+.Pen-previewLink:link,
+.Pen-previewLink:visited,
+.Pen-previewLink:hover,
+.Pen-previewLink:active {
   color: #0b0c0c;
 }
 
 .Pen {
   height: auto;
+}
+
+.Pen-panel {
+  margin-right: 20px;
 }
 
 .Browser {
@@ -2341,5 +2367,24 @@ a {
   .Document-title {
     margin-top: 1.25em;
     margin-bottom: 0.5555555556em;
+  }
+}
+
+.Status-label {
+  font-family: "nta", Arial, sans-serif;
+  font-weight: 400;
+  text-transform: none;
+  font-size: 14px;
+  line-height: 1.1428571429;
+  letter-spacing: normal;
+  border-radius: 0;
+  padding: 0.125rem 0.75rem;
+  color: white;
+}
+
+@media (min-width: 641px) {
+  .Status-label {
+    font-size: 16px;
+    line-height: 1.25;
   }
 }

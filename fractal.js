@@ -41,6 +41,11 @@ fractal.components.set('default.preview', '@preview');
 fractal.components.set('default.collated', true);
 
 /*
+ * Remove component statuses (for now)
+ */
+fractal.components.set('statuses', {});
+
+/*
  * Tell Fractal where to look for documentation pages.
  */
 fractal.docs.set('path', path.join(__dirname, 'docs'));
@@ -60,9 +65,9 @@ const mandelbrot = require('@frctl/mandelbrot');
  */
 const myCustomisedTheme = mandelbrot({
     "skin": "black",
-    "format": "yaml",
+    "format": "json",
     "nav": ["docs", "components"],
-    "panels": ["notes", "html", "view", "context", "resources", "info"]
+    "panels": ["notes", "html", "view", "context", "resources", "info"],
 });
 
 /*
