@@ -2133,6 +2133,11 @@ input[type=number] {
   outline: none;
 }
 
+.Browser-notes,
+.Frame-panel--sidebar {
+  background-color: white;
+}
+
 .Pen-title {
   font-family: "nta", Arial, sans-serif;
   font-weight: 400;

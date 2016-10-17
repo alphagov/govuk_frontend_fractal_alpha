@@ -34,6 +34,11 @@
     outline: none;
 }
 
+.Browser-notes,
+.Frame-panel--sidebar{
+	background-color: white;
+}
+
 .Pen-title{
     @include core-19();
 	color: $text-colour;
