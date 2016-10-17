@@ -17,6 +17,9 @@
 .Tree-title{
 	margin-bottom: 0;
 	color: $text-colour;
+	text-transform: none;
+	@include bold-16;
+    letter-spacing: normal;
 }
 
 .Navigation-group + .Navigation-group {
@@ -37,18 +40,67 @@
     outline: none;
 }
 
+.Browser-tab a{
+    @include core-16();
+    color: $text-colour;
+}
+.Browser-tab a:hover{
+    border-bottom: 3px solid $border-colour;
+}
+.Browser-tab.is-active a{
+    color: $text-colour;
+    border-bottom: 3px solid #005ea5;
+}
+
+.Browser-panel{
+	padding: 30px 0;
+}
+
 .Browser-notes,
+.Browser-panel,
+.Browser-panel .Code,
+.Browser-panel .Code pre{
+	background-color: white;	
+}
+
 .Frame-panel--sidebar{
 	background-color: white;
+	-webkit-border-end: none;
+    width: 25%;
+    padding: 30px 0;
+    border-right: 1px solid $border-colour;
+    margin-right: 15px;
+}
+
+.Pen-info{
+	border: 0px solid $border-colour;	
+}
+
+.Pen-header{
+    max-height: none;
+    padding: 10px 0.75rem 20px;
+}
+
+.Preview{
+	border: 2px solid $border-colour;
 }
 
 .Pen-title{
     @include core-19();
 	color: $text-colour;
+	margin-top: 15px;
 }
 
-.Pen-previewLink svg {
-    vertical-align: middle;
+.Pen-previewLink:link {
+	color: $text-colour;
+}
+
+// Remove dahsboard-style
+.Pen{
+	height: auto;
+}
+.Browser{	
+    position: initial;
 }
 
 .Meta,

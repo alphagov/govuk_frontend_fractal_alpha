@@ -2117,6 +2117,20 @@ input[type=number] {
 .Tree-title {
   margin-bottom: 0;
   color: #0b0c0c;
+  text-transform: none;
+  font-family: "nta", Arial, sans-serif;
+  font-weight: 700;
+  text-transform: none;
+  font-size: 14px;
+  line-height: 1.1428571429;
+  letter-spacing: normal;
+}
+
+@media (min-width: 641px) {
+  .Tree-title {
+    font-size: 16px;
+    line-height: 1.25;
+  }
 }
 
 .Navigation-group + .Navigation-group {
@@ -2137,9 +2151,62 @@ input[type=number] {
   outline: none;
 }
 
+.Browser-tab a {
+  font-family: "nta", Arial, sans-serif;
+  font-weight: 400;
+  text-transform: none;
+  font-size: 14px;
+  line-height: 1.1428571429;
+  color: #0b0c0c;
+}
+
+@media (min-width: 641px) {
+  .Browser-tab a {
+    font-size: 16px;
+    line-height: 1.25;
+  }
+}
+
+.Browser-tab a:hover {
+  border-bottom: 3px solid #bfc1c3;
+}
+
+.Browser-tab.is-active a {
+  color: #0b0c0c;
+  border-bottom: 3px solid #005ea5;
+}
+
+.Browser-panel {
+  padding: 30px 0;
+}
+
 .Browser-notes,
+.Browser-panel,
+.Browser-panel .Code,
+.Browser-panel .Code pre {
+  background-color: white;
+}
+
 .Frame-panel--sidebar {
   background-color: white;
+  -webkit-border-end: none;
+  width: 25%;
+  padding: 30px 0;
+  border-right: 1px solid #bfc1c3;
+  margin-right: 15px;
+}
+
+.Pen-info {
+  border: 0px solid #bfc1c3;
+}
+
+.Pen-header {
+  max-height: none;
+  padding: 10px 0.75rem 20px;
+}
+
+.Preview {
+  border: 2px solid #bfc1c3;
 }
 
 .Pen-title {
@@ -2149,6 +2216,7 @@ input[type=number] {
   font-size: 16px;
   line-height: 1.25;
   color: #0b0c0c;
+  margin-top: 15px;
 }
 
 @media (min-width: 641px) {
@@ -2158,8 +2226,16 @@ input[type=number] {
   }
 }
 
-.Pen-previewLink svg {
-  vertical-align: middle;
+.Pen-previewLink:link {
+  color: #0b0c0c;
+}
+
+.Pen {
+  height: auto;
+}
+
+.Browser {
+  position: initial;
 }
 
 .Meta,
