@@ -1,11 +1,18 @@
 // MANDELBROT THEME OVERWRITES
 
+a{
+	transition: none;
+}
+
 .Tree-item{
 	@include core-16;
-    height: 32px;
+    height: 40px;
 }
 
 .Tree-entityLink{
+	padding: 10px;
+	font-weight: bold;
+	margin-right: 15px;
 	span{
 		color: $link-colour;
 	}
@@ -13,12 +20,22 @@
 		display: none;
 	}
 }
+.Tree-entityLink:focus{
+	background-color: #005ea5;
+}
+
+.is-current .Tree-entityLink{
+	background-color: #005ea5;
+	span{
+		color: white;
+	}
+}
 
 .Tree-title{
 	margin-bottom: 0;
 	color: $text-colour;
 	text-transform: none;
-	@include bold-16;
+	@include core-19;
     letter-spacing: normal;
 }
 
@@ -36,7 +53,6 @@
 
 .Browser-tab a:focus,
 .Tree-entityLink:focus{
-	background-color: transparent;
     outline: none;
 }
 
@@ -69,7 +85,7 @@
     width: 25%;
     padding: 30px 0;
     border-right: 1px solid $border-colour;
-    margin-right: 15px;
+    margin: 0 15px;
 }
 
 .Pen-info{
@@ -88,7 +104,7 @@
 .Pen-title{
     @include core-19();
 	color: $text-colour;
-	margin-top: 15px;
+	margin-top: 20px;
 }
 
 .Pen-previewLink:link {

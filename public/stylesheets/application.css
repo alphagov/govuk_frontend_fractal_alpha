@@ -2090,13 +2090,17 @@ input[type=number] {
   z-index: 100;
 }
 
+a {
+  transition: none;
+}
+
 .Tree-item {
   font-family: "nta", Arial, sans-serif;
   font-weight: 400;
   text-transform: none;
   font-size: 14px;
   line-height: 1.1428571429;
-  height: 32px;
+  height: 40px;
 }
 
 @media (min-width: 641px) {
@@ -2104,6 +2108,12 @@ input[type=number] {
     font-size: 16px;
     line-height: 1.25;
   }
+}
+
+.Tree-entityLink {
+  padding: 10px;
+  font-weight: bold;
+  margin-right: 15px;
 }
 
 .Tree-entityLink span {
@@ -2114,22 +2124,34 @@ input[type=number] {
   display: none;
 }
 
+.Tree-entityLink:focus {
+  background-color: #005ea5;
+}
+
+.is-current .Tree-entityLink {
+  background-color: #005ea5;
+}
+
+.is-current .Tree-entityLink span {
+  color: white;
+}
+
 .Tree-title {
   margin-bottom: 0;
   color: #0b0c0c;
   text-transform: none;
   font-family: "nta", Arial, sans-serif;
-  font-weight: 700;
+  font-weight: 400;
   text-transform: none;
-  font-size: 14px;
-  line-height: 1.1428571429;
+  font-size: 16px;
+  line-height: 1.25;
   letter-spacing: normal;
 }
 
 @media (min-width: 641px) {
   .Tree-title {
-    font-size: 16px;
-    line-height: 1.25;
+    font-size: 19px;
+    line-height: 1.3157894737;
   }
 }
 
@@ -2147,7 +2169,6 @@ input[type=number] {
 
 .Browser-tab a:focus,
 .Tree-entityLink:focus {
-  background-color: transparent;
   outline: none;
 }
 
@@ -2193,7 +2214,7 @@ input[type=number] {
   width: 25%;
   padding: 30px 0;
   border-right: 1px solid #bfc1c3;
-  margin-right: 15px;
+  margin: 0 15px;
 }
 
 .Pen-info {
@@ -2216,7 +2237,7 @@ input[type=number] {
   font-size: 16px;
   line-height: 1.25;
   color: #0b0c0c;
-  margin-top: 15px;
+  margin-top: 20px;
 }
 
 @media (min-width: 641px) {
