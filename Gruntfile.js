@@ -110,7 +110,8 @@ module.exports = function(grunt){
   ]);
 
   grunt.registerTask('default', [
-    'generate-assets'
+    'generate-assets',
+    'watch'
   ]);
 
   grunt.registerTask(

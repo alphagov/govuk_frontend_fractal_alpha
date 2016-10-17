@@ -2110,6 +2110,10 @@ input[type=number] {
   color: #005ea5;
 }
 
+.Tree-entityLink .Status {
+  display: none;
+}
+
 .Tree-title {
   margin-bottom: 0;
   color: #0b0c0c;
