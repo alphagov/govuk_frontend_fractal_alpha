@@ -163,6 +163,13 @@ a{
 	color: $text-colour;
 }
 
+.Meta{
+	@include core-16;
+	a{
+		text-decoration: underline;
+	}
+}
+
 .Prose {
 	font-family: "nta", Arial, sans-serif;
 	h1{
@@ -170,7 +177,7 @@ a{
 		color: $text-colour;
 	}
 	h2{
-    	@include bold-23();
+    	@include bold-24();
 		color: $text-colour;
 	}
 }

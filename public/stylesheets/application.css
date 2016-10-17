@@ -2310,6 +2310,25 @@ a {
   }
 }
 
+.Meta {
+  font-family: "nta", Arial, sans-serif;
+  font-weight: 400;
+  text-transform: none;
+  font-size: 14px;
+  line-height: 1.1428571429;
+}
+
+@media (min-width: 641px) {
+  .Meta {
+    font-size: 16px;
+    line-height: 1.25;
+  }
+}
+
+.Meta a {
+  text-decoration: underline;
+}
+
 .Prose {
   font-family: "nta", Arial, sans-serif;
 }
