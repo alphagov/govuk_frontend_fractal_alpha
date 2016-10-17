@@ -20,8 +20,16 @@ a{
 		display: none;
 	}
 }
+
 .Tree-entityLink:focus{
 	background-color: #005ea5;
+}
+
+.is-current .Tree-entityLink::after {
+    content: "\203A";
+    position: absolute;
+    right: 26px;
+    color: white;
 }
 
 .is-current .Tree-entityLink{
