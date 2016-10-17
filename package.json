@@ -16,5 +16,23 @@
     "grunt-sass": "1.1.0-beta",
     "grunt-sync": "^0.6.2",
     "grunt-text-replace": "0.3.12"
-  }
+  },
+  "description": "A GOV.UK themed version of Clearleft's [Fractal](http://fractal.build/).",
+  "main": "Gruntfile.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alphagov/govuk_frontend_fractal_alpha.git"
+  },
+  "author": "GDS",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alphagov/govuk_frontend_fractal_alpha/issues"
+  },
+  "homepage": "https://github.com/alphagov/govuk_frontend_fractal_alpha#readme"
 }

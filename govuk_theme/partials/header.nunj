@@ -10,7 +10,7 @@
     <div class="header-global">
       <div class="header-logo">
         <a href="index.html" id="logo" class="content">
-          <img src="{{ asset_path }}images/gov.uk_logotype_crown_invert_trans.png?0.17.3" width="35" height="31" alt=""> GOV.UK <span class="product-name">Frontend</span>
+          <img src="/images/gov.uk_logotype_crown_invert_trans.png?0.17.3" width="35" height="31" alt=""> GOV.UK <span class="product-name">Frontend</span>
           <span class="phase-banner-beta"><strong class="phase-tag">alpha</strong></span>
         </a>
       </div>
