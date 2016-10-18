@@ -2178,6 +2178,7 @@ a {
 
 .Preview-handle {
   right: 0px;
+  background-color: rgba(83, 83, 99, 0.05);
 }
 
 .Preview-resizer {

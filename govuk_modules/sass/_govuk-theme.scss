@@ -42,10 +42,12 @@ a{
     position: absolute;
     right: 26px;
     color: white;
+    //color: #005ea5;
 }
 
 .is-current .Tree-entityLink{
 	background-color: #005ea5;
+	//background-color: rgba(83, 83, 99, 0.05);
 	span{
 		color: white;
 	}
@@ -65,6 +67,7 @@ a{
 
 .Preview-handle{
     right: 0px;
+    background-color: rgba(83, 83, 99, 0.05);
 }
 
 .Preview-resizer {
