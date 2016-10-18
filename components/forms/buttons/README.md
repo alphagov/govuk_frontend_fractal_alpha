@@ -1,10 +1,8 @@
 # Notes
 
-Use buttons to move though a transaction.
-
-Aim to use only one button per page.
-
-Button text should be short and describe the action the button performs.
+* use buttons to move though a transaction
+* aim to use only one button per page
+* button text should be short and describe the action the button performs
 
 
 ## Start now button

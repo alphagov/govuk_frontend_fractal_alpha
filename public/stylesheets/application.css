@@ -2369,6 +2369,7 @@ a {
 
 .Prose {
   font-family: "nta", Arial, sans-serif;
+  max-width: 36em;
 }
 
 .Prose h1 {
@@ -2377,7 +2378,6 @@ a {
   text-transform: none;
   font-size: 20px;
   line-height: 1.1111111111;
-  color: #0b0c0c;
 }
 
 @media (min-width: 641px) {
@@ -2393,7 +2393,6 @@ a {
   text-transform: none;
   font-size: 18px;
   line-height: 1.2;
-  color: #0b0c0c;
 }
 
 @media (min-width: 641px) {
@@ -2401,6 +2400,11 @@ a {
     font-size: 24px;
     line-height: 1.25;
   }
+}
+
+.Prose h1, .Prose h2, .Prose h3, .Prose h4, .Prose h5, .Prose h6 {
+  color: #0b0c0c;
+  opacity: 1;
 }
 
 .Prose ul > li {

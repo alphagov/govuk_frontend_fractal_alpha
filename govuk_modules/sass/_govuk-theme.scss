@@ -1,4 +1,8 @@
-// MANDELBROT THEME OVERWRITES
+// GOVUK THEME
+
+// Chock full of hacks and overwrites of the default 'mandlebrot' theme
+// If we use Fractal for real we'll need to build this theme up from scratch
+
 
 a{
 	transition: none;
@@ -198,13 +202,16 @@ a{
 
 .Prose {
 	font-family: "nta", Arial, sans-serif;
+	max-width: 36em;
 	h1{
     	@include bold-27();
-		color: $text-colour;
 	}
 	h2{
     	@include bold-24();
-		color: $text-colour;
+	}
+	h1, h2, h3, h4, h5, h6 {
+	    color: $text-colour;
+	    opacity: 1;
 	}
 
 	ul > li {
