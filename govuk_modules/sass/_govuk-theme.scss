@@ -10,13 +10,28 @@ a{
 
 .Tree-item{
 	@include core-16;
-    height: 40px;
+    line-height: 0 !important;
 }
+
+.Tree-collectionLabel{
+	@include core-16;
+	padding: 10px;
+	font-weight: bold;
+	margin-right: 15px;
+	span{
+		color: $link-colour;
+	}
+	span::before{
+		display: none;
+	}
+}
+
 
 .Tree-entityLink{
 	padding: 10px;
 	font-weight: bold;
 	margin-right: 15px;
+	line-height: 1;
 	span{
 		color: $link-colour;
 	}
@@ -33,16 +48,12 @@ a{
 	}
 }
 
-.Tree-entityLink::after {
-
-}
-
 .is-current .Tree-entityLink::after {
     content: "\203A";
     position: absolute;
     right: 26px;
     color: white;
-    //color: #005ea5;
+    font-weight: bold;
 }
 
 .is-current .Tree-entityLink{
@@ -53,8 +64,20 @@ a{
 	}
 }
 
+
+.Tree-collectionItems{
+
+	margin-bottom: 10px;
+	
+	.Tree-entityLink{
+		font-weight: normal;
+		padding-left: 15px;
+	}
+} 
+
+
 .Tree-title{
-	margin-bottom: 0;
+	margin-bottom: 15px;
 	color: $secondary-text-colour;
 	text-transform: none;
 	@include core-19;
@@ -62,7 +85,7 @@ a{
 }
 
 .Navigation-group + .Navigation-group {
-    margin-top: 2.5rem;
+    margin-top: 20px;
 }
 
 .Preview-handle{
@@ -183,7 +206,12 @@ a{
     	@include bold-24();
 		color: $text-colour;
 	}
+
+	ul > li {
+    	list-style-type: disc;
+	}
 }
+
 
 .Document-title{
   @include bold-36();
