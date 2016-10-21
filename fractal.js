@@ -41,11 +41,6 @@ fractal.components.set('default.preview', '@preview');
 fractal.components.set('default.collated', true);
 
 /*
- * Remove component statuses (for now)
- */
-fractal.components.set('statuses', {});
-
-/*
  * Tell Fractal where to look for documentation pages.
  */
 fractal.docs.set('path', path.join(__dirname, 'docs'));

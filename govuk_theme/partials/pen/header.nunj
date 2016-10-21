@@ -7,5 +7,7 @@
             -->
         </a>
     </h1>
+    <!--
     {{ status.tag(entity.status) }}
+    -->
 </div>
