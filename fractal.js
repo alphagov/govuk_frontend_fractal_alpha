@@ -36,6 +36,11 @@ fractal.components.set('ext', '.nunj');
 fractal.components.set('default.preview', '@preview');
 
 /*
+ * Set the build directory for the static HTML
+ */
+fractal.web.set('builder.dest', __dirname + '/build');
+
+/*
  * Variants are collated on the same page
  */
 fractal.components.set('default.collated', true);
