@@ -68,6 +68,9 @@ const myCustomisedTheme = mandelbrot({
     "format": "json",
     "nav": ["docs", "components"],
     "panels": ["notes", "html", "view", "context", "resources", "info"],
+    "static": {
+        "mount": "theme"
+    }
 });
 
 /*
