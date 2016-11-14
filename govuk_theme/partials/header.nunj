@@ -15,7 +15,6 @@
         </a>
       </div>
     </div>
-<!--
     <div class="header-proposition">
       <div class="content">
         <a href="#proposition-links" class="js-header-toggle menu">Menu</a>
@@ -31,7 +30,6 @@
         </nav>
       </div>
     </div>
--->
   </div>
 </header>
 <div id="global-header-bar"></div>
