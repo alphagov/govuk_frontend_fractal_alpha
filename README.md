@@ -12,6 +12,9 @@ We'll be looking at a number of automated documentation tools as part of the GOV
 
 The prototype is hosted on Github Pages.
 
-You can publish it by pushing the 'build' folder to the gh-pages branch on github:
+You can publish it by first generating the static pages and then pushing the 'build' folder to the gh-pages branch on github:
 
-`git subtree push --prefix build origin gh-pages`
+```
+fractal build
+git subtree push --prefix build origin gh-pages
+```
